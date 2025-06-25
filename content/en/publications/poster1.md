@@ -8,7 +8,7 @@ cover: "/images/publications/poster1.png"
 flowchart: "/images/publications/poster1_flowchart_static.png"
 # Optional interactive embed
 flowchartEmbed: "https://observablehq.com/embed/@ethan-space/personal-portfolio-website-publications-poster-1?cells=svg%2Cviewof+stage"
-methodsGraphic: "/images/publications/poster1_flowchart_static.png"
+methodsGraphic: "/images/publications/methods-graphic.svg"
 resultsGraph: "/images/publications/results-plot.svg"
 
 purpose: "Examine equity in hospitalization after emergency department visit and, once hospitalized, in receiving treatment for COVID-positive patients across demographics such as race/ethnicity and different Social Determinants of Health (SDoH) variables. We also examined the same questions but with a focus on a vulnerable population of people experiencing housing instability (HI)."

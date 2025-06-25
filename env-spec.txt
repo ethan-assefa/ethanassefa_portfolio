@@ -1,40 +1,38 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: win-64
-# created-by: conda 24.9.2
-@EXPLICIT
-https://conda.anaconda.org/conda-forge/label/broken/win-64/go-1.10-0.tar.bz2
-https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.4.26-h4c7d964_0.conda
-https://conda.anaconda.org/conda-forge/win-64/intel-openmp-2024.2.1-h57928b3_1083.conda
-https://conda.anaconda.org/conda-forge/noarch/python_abi-3.13-7_cp313.conda
-https://conda.anaconda.org/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
-https://conda.anaconda.org/conda-forge/win-64/ucrt-10.0.22621.0-h57928b3_1.conda
-https://conda.anaconda.org/conda-forge/win-64/hugo-0.147.8-ha2862d8_0.conda
-https://conda.anaconda.org/conda-forge/win-64/libwinpthread-12.0.0.r4.gg4f2fc60ca-h57928b3_9.conda
-https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.42.34438-hfd919c2_26.conda
-https://conda.anaconda.org/conda-forge/win-64/vc-14.3-h2b53caa_26.conda
-https://conda.anaconda.org/conda-forge/win-64/bzip2-1.0.8-h2466b09_7.conda
-https://conda.anaconda.org/conda-forge/win-64/libexpat-2.7.0-he0c23c2_0.conda
-https://conda.anaconda.org/conda-forge/win-64/libffi-3.4.6-h537db12_1.conda
-https://conda.anaconda.org/conda-forge/win-64/libiconv-1.18-h135ad9c_1.conda
-https://conda.anaconda.org/conda-forge/win-64/liblzma-5.8.1-h2466b09_2.conda
-https://conda.anaconda.org/conda-forge/win-64/libmpdec-4.0.0-h2466b09_0.conda
-https://conda.anaconda.org/conda-forge/win-64/libsqlite-3.50.1-h67fdade_0.conda
-https://conda.anaconda.org/conda-forge/win-64/libzlib-1.3.1-h2466b09_2.conda
-https://conda.anaconda.org/conda-forge/win-64/openssl-3.5.0-ha4e3fda_1.conda
-https://conda.anaconda.org/conda-forge/win-64/tk-8.6.13-h2c6b04d_2.conda
-https://conda.anaconda.org/conda-forge/win-64/libxml2-2.13.8-h442d1da_0.conda
-https://conda.anaconda.org/conda-forge/win-64/python-3.13.5-h261c0b1_101_cp313.conda
-https://conda.anaconda.org/conda-forge/win-64/libhwloc-2.11.2-default_ha69328c_1001.conda
-https://conda.anaconda.org/conda-forge/noarch/pip-25.1.1-pyh145f28c_0.conda
-https://conda.anaconda.org/conda-forge/noarch/python-tzdata-2025.2-pyhd8ed1ab_0.conda
-https://conda.anaconda.org/conda-forge/noarch/pytz-2025.2-pyhd8ed1ab_0.conda
-https://conda.anaconda.org/conda-forge/noarch/six-1.17.0-pyhd8ed1ab_0.conda
-https://conda.anaconda.org/conda-forge/noarch/python-dateutil-2.9.0.post0-pyhff2d567_1.conda
-https://conda.anaconda.org/conda-forge/win-64/tbb-2021.13.0-h62715c5_1.conda
-https://conda.anaconda.org/conda-forge/win-64/mkl-2024.2.2-h66d3029_15.conda
-https://conda.anaconda.org/conda-forge/win-64/libblas-3.9.0-31_h641d27c_mkl.conda
-https://conda.anaconda.org/conda-forge/win-64/libcblas-3.9.0-31_h5e41251_mkl.conda
-https://conda.anaconda.org/conda-forge/win-64/liblapack-3.9.0-31_h1aa476e_mkl.conda
-https://conda.anaconda.org/conda-forge/win-64/numpy-2.3.0-py313hefb8edb_0.conda
-https://conda.anaconda.org/conda-forge/win-64/pandas-2.3.0-py313hf91d08e_0.conda
+# packages in environment at C:\Users\affes\anaconda3\envs\Eportfolio_2025:
+#
+# Name                    Version                   Build  Channel
+bzip2                     1.0.8                h2466b09_7    conda-forge
+ca-certificates           2025.4.26            h4c7d964_0    conda-forge
+go                        1.10                          0    conda-forge/label/broken
+hugo                      0.147.8              ha2862d8_0    conda-forge
+intel-openmp              2024.2.1          h57928b3_1083    conda-forge
+libblas                   3.9.0           31_h641d27c_mkl    conda-forge
+libcblas                  3.9.0           31_h5e41251_mkl    conda-forge
+libexpat                  2.7.0                he0c23c2_0    conda-forge
+libffi                    3.4.6                h537db12_1    conda-forge
+libhwloc                  2.11.2          default_ha69328c_1001    conda-forge
+libiconv                  1.18                 h135ad9c_1    conda-forge
+liblapack                 3.9.0           31_h1aa476e_mkl    conda-forge
+liblzma                   5.8.1                h2466b09_2    conda-forge
+libmpdec                  4.0.0                h2466b09_0    conda-forge
+libsqlite                 3.50.1               h67fdade_0    conda-forge
+libwinpthread             12.0.0.r4.gg4f2fc60ca      h57928b3_9    conda-forge
+libxml2                   2.13.8               h442d1da_0    conda-forge
+libzlib                   1.3.1                h2466b09_2    conda-forge
+mkl                       2024.2.2            h66d3029_15    conda-forge
+numpy                     2.3.0           py313hefb8edb_0    conda-forge
+openssl                   3.5.0                ha4e3fda_1    conda-forge
+pandas                    2.3.0           py313hf91d08e_0    conda-forge
+pip                       25.1.1             pyh145f28c_0    conda-forge
+python                    3.13.5          h261c0b1_101_cp313    conda-forge
+python-dateutil           2.9.0.post0        pyhff2d567_1    conda-forge
+python-tzdata             2025.2             pyhd8ed1ab_0    conda-forge
+python_abi                3.13                    7_cp313    conda-forge
+pytz                      2025.2             pyhd8ed1ab_0    conda-forge
+six                       1.17.0             pyhd8ed1ab_0    conda-forge
+tbb                       2021.13.0            h62715c5_1    conda-forge
+tk                        8.6.13               h2c6b04d_2    conda-forge
+tzdata                    2025b                h78e105d_0    conda-forge
+ucrt                      10.0.22621.0         h57928b3_1    conda-forge
+vc                        14.3                h2b53caa_26    conda-forge
+vc14_runtime              14.42.34438         hfd919c2_26    conda-forge
