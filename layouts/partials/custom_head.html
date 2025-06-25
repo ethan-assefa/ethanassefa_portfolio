@@ -1,0 +1,115 @@
+<!-- A partial to be overwritten by the user.
+     Its content will appear before the closing </head>-tag -->
+
+
+<!-- Custom CSS via inline styles
+     You may use this template to add custom CSS to your site like so: -->
+<!--
+<style>
+:root {
+    /* see variables.scss for more variables*/
+
+    /*
+    --section-light-text-color: #3a4145!important;
+    --section-light-bg-color: #ffdb8c!important;
+    --section-dark-bg-color: #035e00!important;
+    */
+
+     /* define list element for unnumbered lists, leave empty for default list element */
+     /* fa-asterisk is the default icon if this variable definition is missing completely */
+     --ul-li-icon: fa-dashcube;     /* this sets fa-dashcube as list icon */
+     --ul-li-icon: ;                /* this sets the default html list icon */
+}
+</style>
+-->
+
+<link rel="stylesheet" href='{{ "css/custom.css" | relURL }}'>
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+  :root {
+    /* Primary brand color (used for accents, buttons, links) */
+    --accent-color:      #9c3320;   /* deep red */
+    /* Secondary accent (hover states, highlights) */
+    --accent-color-2:    #ffdd4e;   /* gold */
+
+    /* Text and background */
+    --text-color:        #111111;
+    --background-color:  #ffffff;
+
+    /* Link colors */
+    --link-color:        var(--accent-color);
+    --link-hover-color:  var(--accent-color-2);
+
+    /* Section backgrounds (alternate stripes) */
+    --section-bg-light:  #f7f7f7;
+    --section-bg-dark:   #e1e1e1;
+
+    /* Any other CSS vars Hugo-Scroll defines—feel free to override! */
+  }
+
+  /* Example extra tweak: make buttons pill-shaped */
+  .btn {
+    border-radius: 999px !important;
+  }
+</style>
+
+<style>
+  /* —— Hero Section Buttons —— */
+  #site-head .btn.site-menu {
+    background-color: #9c3320 !important;   /* deep red */
+    color:           #ffffff !important;   /* white text */
+    border:          none !important;
+  }
+  #site-head .btn.site-menu:hover {
+    background-color: #ffdd4e !important;   /* gold on hover */
+  }
+
+  /* —— Hero Section Headings —— */
+  #site-head .blog-title,
+  #site-head .blog-description {
+    color: #111111 !important;               /* very dark text */
+  }
+</style>
+
+<style>
+.header {
+  position: relative;
+  overflow: hidden;
+}
+.header-video-wrapper {
+  position: absolute;
+  top: 0; left: 50%;
+  width: 100vw; height: 100vh;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: -1;
+}
+.header-video {
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto;
+  filter: brightness(60%) saturate(70%);
+}
+</style>
+
+<!-- Custom CSS via "custom.css"-file
+     If you would rather place your custom CSS into
+     a separate file, create a "custom.css" in your
+     local "static/css"-directory. Then add a <link>-tag
+     referencing your "custom.css" like so: -->
+
+<!-- <link rel="stylesheet" href='{{ "css/custom.css" | absURL }}'> -->
+
+<!-- Custom CSS: Color Codes
+     You may checkout https://htmlcolorcodes.com/ to get those
+     weird color codes (like "#22343A") ;-). -->
+
+<!-- Custom link-tags for different icons
+     Generated via https://favicon.io/favicon-generator/ -->
+
+{{ with resources.Get "images/apple-touch-icon.png" }}<link rel="apple-touch-icon" sizes="180x180" href="{{ .RelPermalink }}" />{{ end }}
+{{ with resources.Get "images/favicon.svg" }}<link rel="icon" type="image/svg+xml" href="{{ .RelPermalink }}" />{{ end }}
+{{ range seq 9 4 }}{{ $size := pow 2 . }}{{ $file := replace "images/favicon-##x##.png" "##" $size }}{{ with resources.Get $file }}
+<link rel="icon" type="{{ .MediaType.Type }}" sizes="{{- $size -}}x{{- $size -}}" href="{{ .RelPermalink }}" />{{ end }}{{ end }}
+

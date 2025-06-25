@@ -1,0 +1,17 @@
+<div class="projects-grid">
+  {{ $pubs := where site.RegularPages "Section" "publications" }}
+  {{ range $i, $p := $pubs }}
+    <a 
+      href="{{ $p.RelPermalink }}" 
+      class="project-card"
+      data-aos="fade-up"
+      data-aos-delay="{{ mul (add $i 1) 100 }}"
+    >
+      <div 
+        class="project-card__img"
+        style="background-image: url('{{ $p.Params.image | relURL }}')"
+      ></div>
+      <div class="project-card__title">{{ $p.Title }}</div>
+    </a>
+  {{ end }}
+</div>

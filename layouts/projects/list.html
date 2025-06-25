@@ -1,0 +1,18 @@
+
+{{ define "main" }}
+<section id="projects" data-scroll-section>
+  <div class="container">
+    <h2 class="section-title">{{ .Title }}</h2>
+    <div class="projects-grid">
+      {{ range .Pages.ByDate.Reverse }}
+      <a href="{{ .RelPermalink }}" class="project-card">
+        <div class="project-card__img"
+             style="background-image: url('{{ .Params.image }}')">
+        </div>
+        <div class="project-card__title">{{ .Title }}</div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
