@@ -17,6 +17,12 @@ title = 'Ethan Assefa: Public Health Data Scientist'
 # enable emoji processing in Markdown (valid only for pure markdown content)
 enableEmoji = true
 
+# To allow the markdown documents to contain HTML and be read by the compiler
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 # Theme-specific variables `.Site.Params.myParamName`
 [params]
 

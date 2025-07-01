@@ -109,3 +109,23 @@
 .interactive-flowchart iframe {
   border: none;
 }
+
+/* Collapsible sections for education & employment */
+.collapsible {
+  margin-bottom: 1rem;
+}
+.collapsible .summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.collapsible .details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  margin-left: 1rem;
+}
+.collapsible.expanded .details {
+  max-height: 1000px; /* large enough to show content */
+  opacity: 1;
+}
